@@ -6,6 +6,7 @@
 @import "base/typography";
 
 // Components
+@import "components/project";
 
 // Layout
 @import "layout/header";
@@ -13,4 +14,7 @@
 @import "layout/footer";
 
 // Pages
-// Imported directly from the component
+@import "pages/home";
+@import "pages/projects";
+@import "pages/about";
+@import "pages/contact";

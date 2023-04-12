@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
@@ -13,11 +13,22 @@ body {
     margin-left: 3rem;
     margin-right: 3rem;
     background-color: $color-background;
+
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+
+    box-sizing: border-box;
 }
   
 div#__next {
     height: 100vh;
+}
+
+.app {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }

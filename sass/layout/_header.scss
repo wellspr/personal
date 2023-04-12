@@ -1,24 +1,38 @@
-header {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-    h1 {
-        font-size: 1.4rem;
-        font-weight: 300;
-        letter-spacing: 1px;
-
-        a {
-            text-decoration: none;
-            color: $color-dark;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background-color: $color-background;
+    
+    .brand {
+        text-transform: uppercase;
+        transition: all 0.15s;
+        height: 2rem;
+        font-size: 1.6rem;
+    
+        h1 {
+            font-size: inherit;
+            font-weight: 300;
+            letter-spacing: 1px;
+    
+            a {
+                text-decoration: none;
+                color: $color-dark;
+            }
         }
     }
-    
+        
     nav {
-        margin-top: 1rem;
+        margin: 1rem 0;
+        transition: all 0.15s;
+        position: relative;
+        z-index: 100;
 
         a {
             color: $color-link;
@@ -29,12 +43,28 @@ header {
 
             &:hover {
                 color: $color-link-hover;
-                text-decoration: underline;
+                //border-bottom: 2px solid;
+            }
+
+            &:active {
+                border-bottom: 2px solid;
+            }
+
+            &:focus {
+                border-bottom: 2px solid;
+                
             }
 
             &:last-of-type {
                 margin-right: 0;
             }
+        }
+    }
+
+    &__link {
+
+        &--active {
+            border-bottom: 2px solid;
         }
     }
 }

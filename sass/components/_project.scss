@@ -1,0 +1,52 @@
+.project {
+	width: 400px;
+	height: 400px;
+
+	background-color: azure;
+	
+	margin: 1rem;
+	border-radius: 2rem;
+	border: 1px solid;
+	padding: 1rem;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	&__title {
+		font-size: 1.8rem;
+		font-weight: bold;
+	}
+
+	&__desc {
+		margin-bottom: 2rem;
+	}
+
+	&__techstack {
+		font-size: 1.4rem;
+		li {
+			list-style: none;
+		}
+	}
+
+	&__link {
+		margin: 1rem;
+		font-size: 1.6rem;
+	}	
+}
+
+.tags {
+	margin: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&__item {
+		padding: 10px;
+		margin: 5px;
+		background-color: gainsboro;
+		font-size: 1.4rem;
+		font-weight: bold;
+		border-radius: 1rem;
+	}
+}

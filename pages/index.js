@@ -1,23 +1,21 @@
 import Image from "next/image";
 import profilePic from "../public/profile_pic.jpg";
-import styles from "../sass/pages/Homepage.module.scss";
 
 const Homepage = () => {
-  return <>
-    <section id={styles.homeContainer}>
-      <h2>Hi!</h2>
+  return <div className="home">
+    <h2>Hi!</h2>
 
-      <Image 
-        src={profilePic} 
-        width={"150px"}
-        height={"150px"}
-        alt="Picture of the webpage owner"
-      />
+    <Image 
+      src={profilePic} 
+      className="home__profile-pic"
+      width={150}
+      height={150}
+      alt="Picture of Paulo"
+    />
 
-      <h3>I&apos;m Paulo,</h3>
-      <p>a fullstack webdeveloper.</p>
-    </section>
-  </>;
+    <h3>I&apos;m Paulo,</h3>
+    <p>a fullstack webdeveloper.</p>
+  </div>;
 };
 
 export default Homepage;
